@@ -1,4 +1,5 @@
 import React from 'react';
+import { TouchableOpacity, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Welcome from '../screens/welcome';
@@ -13,6 +14,15 @@ const Routes = () => (
           <Stack.Screen 
           name='Home'
           component={Home}
+          options={({navigation}) => 
+            ({headerRight: () => 
+              (
+                <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
+                  <Text style={{color: 'black'}}>Settings</Text>
+                </TouchableOpacity>
+              )
+            })
+          }
           />
           <Stack.Screen
           name='Settings'

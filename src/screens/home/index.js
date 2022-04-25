@@ -1,10 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import Nfc from '../../components/nfc';
+import Styles from './styles';
 
-const Home = ({ navigation }) => {
+const Home = () => {
     return(
-      <View>
-        <Text>Hello Home</Text>
+      <View style={Styles.wrapper}>
+        <Nfc></Nfc>
       </View>
     )
 }
