@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import { withSafeAreaInsets } from 'react-native-safe-area-context';
 
 const Styles = StyleSheet.create({
   button: {
@@ -7,7 +6,7 @@ const Styles = StyleSheet.create({
     width: 350,
     height: 300,
     alignItems: 'center',
-    backgroundColor: '#2196f3',
+    backgroundColor: '#000000',
     borderRadius: 10,
     justifyContent: 'center',
   },
@@ -21,15 +20,15 @@ const Styles = StyleSheet.create({
     width: 200,
     padding: 10,
   },
-  readModalOuter: {
+  modalOuter: {
     backgroundColor: '#00000080',
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
   },
-  readModalInner: {
-    width: 300,
+  modalInner: {
+    width: 350,
     borderRadius: 5,
     padding: 20,
     backgroundColor: '#202124',
@@ -38,15 +37,23 @@ const Styles = StyleSheet.create({
   modalTitle: {
     fontSize: 23,
     paddingBottom: 10,
+    color: 'white'
   },
   modalContent: {
     fontSize: 20,
     paddingTop: 5,
-    color: '#aaaaaa'
+    color: '#aaaaaa',
+  },
+  modalInput: {
+    padding: 14,
+    fontSize: 18,
+    color: '#aaaaaa',
   },
   modalButton: {
     marginTop: 30,
     justifyContent: 'flex-end',
+    alignSelf: 'flex-end',
+    padding: 10
   },
 });
 

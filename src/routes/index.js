@@ -18,7 +18,7 @@ const Routes = () => (
             ({headerRight: () => 
               (
                 <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
-                  <Text style={{color: 'black', fontSize: 20, padding: 20}}>Settings</Text>
+                  <Text style={{color: '#0079CE', fontSize: 18, padding: 20}}>Settings</Text>
                 </TouchableOpacity>
               )
             })
